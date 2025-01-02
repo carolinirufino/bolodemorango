@@ -1,0 +1,91 @@
+   body {
+                font-family: Arial, sans-serif;
+                background-color: #fffaf0;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1, h2, h3 {
+                color: #c71585;
+                text-align: center;
+            }
+
+            /* Passo 2: Bordas, margens e espaçamento */
+            .imagem {
+                text-align: center;
+                margin: 20px;
+            }
+
+            img {
+                border: 5px solid #c71585;
+                border-radius: 10px;
+                max-width: 100%;
+                height: auto;
+            }
+
+            section {
+                margin: 20px auto;
+                padding: 20px;
+                max-width: 800px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            ul, ol {
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            /* Passo 3: Layouts com Flexbox */
+            .ingredientes, .modo-preparo {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            /* Passo 4: Layouts com Grid */
+            .ingredientes ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+
+            /* Passo 5: Adicionar efeitos interativos */
+            a {
+                color: #c71585;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: #8b0000;
+            }
+
+            /* Passo 6: Responsividade */
+            @media (max-width: 768px) {
+                body {
+                    font-size: 14px;
+                }
+
+                section {
+                    padding: 10px;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                img {
+                    border-width: 3px;
+                }
+            }
