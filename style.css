@@ -11,7 +11,7 @@
                 text-align: center;
             }
 
-            /* Passo 2: Bordas, margens e espaçamento */
+         
             .imagem {
                 text-align: center;
                 margin: 20px;
@@ -41,21 +41,18 @@
                 margin-bottom: 10px;
             }
 
-            /* Passo 3: Layouts com Flexbox */
             .ingredientes, .modo-preparo {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
             }
 
-            /* Passo 4: Layouts com Grid */
             .ingredientes ul {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 gap: 10px;
             }
 
-            /* Passo 5: Adicionar efeitos interativos */
             a {
                 color: #c71585;
                 text-decoration: none;
@@ -67,7 +64,6 @@
                 color: #8b0000;
             }
 
-            /* Passo 6: Responsividade */
             @media (max-width: 768px) {
                 body {
                     font-size: 14px;
